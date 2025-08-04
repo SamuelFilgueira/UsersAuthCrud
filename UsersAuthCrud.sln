@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Users.Domain", "Users.Domai
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Users.Infrastructure", "Users.Infrastructure\Users.Infrastructure.csproj", "{47C2E50D-F329-4674-8F22-87893D14D46D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Users.Exceptions", "Users.Exceptions\Users.Exceptions.csproj", "{1A62218A-9506-4EB1-BFD2-73703FF23FBC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{47C2E50D-F329-4674-8F22-87893D14D46D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{47C2E50D-F329-4674-8F22-87893D14D46D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{47C2E50D-F329-4674-8F22-87893D14D46D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1A62218A-9506-4EB1-BFD2-73703FF23FBC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A62218A-9506-4EB1-BFD2-73703FF23FBC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A62218A-9506-4EB1-BFD2-73703FF23FBC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A62218A-9506-4EB1-BFD2-73703FF23FBC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

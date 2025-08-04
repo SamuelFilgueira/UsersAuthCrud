@@ -1,6 +1,10 @@
-﻿namespace Users.Application.DTOs
+﻿using System.Data;
+
+namespace Users.Application.DTOs;
+
+public class CreateUserDTO
 {
-    public class CreateUserDTO
-    {
-    }
+    public string UserName { get;  set; } = string.Empty;
+    public string Email { get;  set; } = string.Empty;
+    public string Password { get; set; } = string.Empty;
 }

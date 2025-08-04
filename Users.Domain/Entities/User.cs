@@ -17,4 +17,11 @@ public class User : BaseEntity
     public Roles Role { get; private set; } = Roles.User;
     public DateTime CreatedAt { get; private set; } = DateTime.Now;
     public DateTime UpdatedAt { get; private set; }
+
+    public void UpdateUser(string userName, string email)
+    {
+        UserName = userName;
+        Email = email;
+        UpdatedAt = DateTime.Now;
+    }
 }
