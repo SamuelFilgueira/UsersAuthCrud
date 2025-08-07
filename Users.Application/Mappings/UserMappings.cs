@@ -1,4 +1,5 @@
-﻿using Users.Application.DTOs;
+﻿using System.Runtime.CompilerServices;
+using Users.Application.DTOs;
 using Users.Domain.Entities;
 
 namespace Users.Application.Mappings;
@@ -28,6 +29,7 @@ public static class UserMappings
             Email = user.Email,
         };
     }
+
 
     public static void ApplyUpdate(this User user, UpdateUserDTO dto)
     {

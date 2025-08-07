@@ -27,22 +27,21 @@ public class UserRepository : IUserRepository
     public async Task DeleteAsync(int id)
     {
         var user = await _dbContext.Users.FindAsync(id);
-        if(user == null) throw new ArgumentNullException(nameof(user));
+        if (user == null) throw new InvalidOperationException($"Usuário com ID {id} não encontrado.");
         _dbContext.Users.Remove(user);
         await _dbContext.SaveChangesAsync();
     }
 
     public async Task<IEnumerable<User>> GetAllAsync()
     {
-        var users = await _dbContext.Users.ToListAsync();
-        if (users == null) throw new ArgumentNullException(nameof(users));
-        return users;
+        return await _dbContext.Users.ToListAsync();
+        
     }
 
     public async Task<User?> GetByIdAsync(int id)
     {
         var user = await _dbContext.Users.FirstOrDefaultAsync(u => u.Id == id);
-        if( user == null ) throw new ArgumentNullException(nameof(user));
+        if (user == null) throw new InvalidOperationException($"Usuário com ID {id} não encontrado.");
         return user;
     }
 
